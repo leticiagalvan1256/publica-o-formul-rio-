@@ -1,0 +1,91 @@
+<!doctype>
+<html>
+   <head>
+       <style>
+       body {
+           background-color: rgb(190, 228, 244);
+           font-family:Georgia, 'Times New Roman', Times, serif;
+       }
+       h1 {
+           color:rgb(255, 255, 255);
+           text-align: center;
+           padding: 25px;
+       }
+       form {
+        margin: 35px;
+        color: rgb(103, 103, 103);
+       }
+       h2 {
+        color: rgb(255, 255, 255);
+        margin: 30px;
+       }
+       p {
+        color: rgb(103, 103, 103);
+       }
+           
+        </style>
+       <title>forms</title>
+   </head>
+
+
+   <body>
+       <h1>Achados e perdidos.</h1>
+       
+       <p>Caso tenha perdido algum item, preencha os dados abaixo caso o objeto seja encontrado.</p>
+
+       <h2>Suas infromações:</h2>
+       <form>
+           <label for="fname">Nome completo:</label>
+           <input type="text" id="nome" name="nome" value=""><br>
+       </form>
+
+       <form>
+        <label for="fname">Cidade e estado onde reside:</label>
+        <input type="text" id="local" name="local" value=""><br>
+        </form>
+        
+        <form>
+            <p>Qual opção de contato utilizar caso o objeto seja encontrado?</p>
+              <input type="radio" id="chamada" name="contato" value="chamada">
+              <label for="chamada">Por chamada.</label><br>
+              <input type="radio" id="mensagem" name="contato" value="chamada">
+              <label for="mensagem">Por mensagem de texto.</label><br>
+              <input type="radio" id="whatsapp" name="contato" value="whatsapp">
+              <label for="whatsapp">Por mensagem no whatsapp.</label><br>
+              <input type="radio" id="email" name="contato" value="email">
+              <label for="email">Por email.</label>
+            </form>
+
+            <form>
+                <label for="fname">Informe o telefone ou email para contato:</label>
+                <input type="text" id="contat" name="contat" value=""><br>
+            </form>  
+
+
+        <h2>Informações do objeto:</h2>
+
+        <form> 
+            <p>Qual o objeto perdido? dê descrições.</p>
+            <textarea name="message" rows="5" cols="50"> digite aqui...</textarea>
+        </form>
+
+        <form>
+            <label for="color">Especifique a cor do objeto:</label>
+            <input type="color" id="color" name="color">
+       </form>
+
+       <form>
+           <label for="data">Data que perdeu o objeto:</label>
+           <input type="date" id="data" name="data">
+         </form>
+      
+       <form action="/action_page.php">
+           <label for="arquivo">Caso tenha uma foto, faça o upload aqui:</label>
+           <input type="file" id="arquivo" name="arquivo"><br><br>
+         </form>
+
+        <button type="button" onclick="alert('Suas informações foram enviadas, entraremos em contato quando o objeto for encontrado!')">Enviar informações.</button>
+
+
+   </body>
+</html>
